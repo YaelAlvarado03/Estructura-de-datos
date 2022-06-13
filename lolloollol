@@ -1,0 +1,55 @@
+using System;
+
+namespace lol
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+
+public class persona
+{
+    string nombre;
+    string apellido;
+    int numero_cliente;
+    int cuenta_bancaria;
+
+public persona(string lastName, string firstName,int num_cliene, int cuen_bancaria)
+   {
+      nombre = lastName;
+      apellido = firstName;
+      numero_cliente = num_cliene;
+      cuenta_bancaria = cuen_bancaria;
+
+   }
+}
+
+public class banco 
+{
+    int deposito;
+    int transferencia;
+
+    public banco(int dep, int transf)
+   {
+      deposito = dep;
+      transferencia = transf;
+
+   }
+
+}
+
+ static void persona (string[] args)
+{
+    /*string nombre = "pedro";
+    string apellido = "perez";
+    int numero_cliente = 1;
+    int cuenta_bancaria = 402730214879;*/
+
+    persona person1 = new persona("pedro","perez",1,402730214879); //llamada funcion                    
+    Console.WriteLine ("person1 nombre = pedro, apellido = perez, numero_cliente, cuenta_bancaria = 402730214879", person1.nombre,person1.apellido,person1.numero_cliente,person1.cuenta_bancaria);
+}
